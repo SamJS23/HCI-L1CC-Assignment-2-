@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>HCI ASSIGNMENT-02</title>
+</head>
+<body>
+<h1>HCI ASSIGNMENT-02</h1>
+<table>
+    <form id="form">
+            <tr> 
+                <td><label for="Full Name">Full Name</label><br/><input type="text" name="Full Name" style = "width:385px;"> </td>
+                <td rowspan = "4"><img src="self.jpg" width="640px" height="360px"></td>
+            </tr>
+            <tr>
+                 <td><label for="email">Email address</label><br/><input type="email" name="email" style = "width:385px;"> </td>
+            </tr>
+            <tr> 
+                <td><label for="phone">Phone number</label><br/><input type="number" name="number" style = "width:385px;"></td>
+            </tr>
+            <tr>
+                <td><label for="self description"> Describe yourself </label><br/><textarea name="place" id="place" cols="50" rows="10"></textarea></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td><label for="color">Age</label><br/> <select name="color" id="color">
+                    <option>Choose age range</option>
+                    <option value = "first"> 1 - 10</option>
+                    <option value = "second"> 11 - 20</option>
+                    <option value = "third"> 21 - 30 </option>
+                    <option value = "fourth"> 31 - 40</option>
+                    <option value = "fifth"> 41 - 50 </option>
+                    <option value ="sixth"> 50 +</option> </td>
+                <td rowspan="3"><fieldset><label for="gender">Gender</label> <br/> <input type="radio"> <label for="male">Male</label> <br/> <input type="radio"> <label for="female">Female</label></fieldset></td>
+            </tr>
+            <tr> 
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td><label for="country">Country of origin</label><br/><select name="continent" id="continent">
+                    <option>Choose your country of origin</option>
+                    <option value="USA">USA</option>
+                    <option value="CH">China</option>
+                    <option value="IDN">Indonesia</option>
+                    <option value="IND">India</option>
+                    <option value="GER">Germany</option>
+                    <option value="SAF">South Africa</option></td>
+                <td rowspan="3"><fieldset><label for="sosmed">Which of these social media platforms do you frequently use?</label><br/><input type="checkbox"><label for="Instagram"> Instagram </label><br/><input type="checkbox"><label for="Twitter"> Twitter </label><br/><input type="checkbox"><label for="Youtube"> Youtube </label><br/><input type="checkbox"><label for="Tiktok"> Tiktok </label></td>
+            </tr>
+            <tr><td>City of origin<br/><input type="text" name="city"></td></tr>
+            <tr></tr>
+            <tr>
+            <td><label for="date">Form fill out date:</label><br/><input type="date"><br/><label for="time">Form fill out time:</label><br/><input type="time"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr><td><div class="term"><label for="terms">I accept the terms and conditions</label><input type="checkbox"></div></td></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr><td><button type="button" onclick="submitForm()"> Submit Survey </button> <button type="button" onclick="reset()"> Clear Form </button> </td></tr>
+    </form>
+</table>
+</body>
+<script>
+function submitForm(){
+    alert("Form has been submitted");
+    document.getElementById("form").reset();
+}
+function reset(){
+    document.getElementById("form").reset();
+}
+</script>
+</html>

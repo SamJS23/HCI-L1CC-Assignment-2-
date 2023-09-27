@@ -1,0 +1,21 @@
+body{
+    background-image: url('bg image 2.jpg');
+    font-size: 15px;
+
+}
+h1{text-align: center;
+color:azure}
+table{
+    background-color: burlywood;
+    justify-content: center;
+    display:flex;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+tr{
+    height: 10px;
+}
+.term{
+    background-color:white;
+}
